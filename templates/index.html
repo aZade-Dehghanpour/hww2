@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block body%}
+<h1></h1>
+<p>Hello Guest!</p>
+<p>
+    <div>Tell us your name</div>
+    <div>
+        <form action="/firstpage" method="post">
+            <input type="text" name="name" placeholder="Name" autofocus autocomplete="off">
+            <input type="submit" value="Let's go">
+        </form>
+    </div>
+</p>
+{% endblock%}

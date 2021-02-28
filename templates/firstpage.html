@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block body%}
+<p>
+    <div>
+        <div>Hi {{name}}</div>
+        <div>
+            What program do you want to know about?
+            <form action="/info" method="post">
+                <select name="programs">
+                    <option value="" selected disabled>--</option>
+                    {% for program in programs%}
+                        <option value="{{program}}">{{program}}</option>
+                    {% endfor%}
+                </select>
+                <input type="submit" value="give me the dirt">
+            </form>
+            
+        </div>
+
+    </div>
+</p>
+{% endblock %}
