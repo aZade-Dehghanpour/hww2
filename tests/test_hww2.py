@@ -1,4 +1,4 @@
-from hww2.app import app
+from hww2.website import app
 
 
 # our very first functional test
